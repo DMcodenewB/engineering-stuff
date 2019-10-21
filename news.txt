@@ -2,13 +2,17 @@ guess who's back, back again
 
 the engineering project update has actually never seen the sunlight. time to take up something new
 
-say welcome to project management folder
+
+
+what's new (21.10.19):
++ added new folder (paradigms) for easy access to excersise list solutions
+* ocaml.ml file in paradigms->cw1pp will be fixed later today
 
 
 what's new (16.10.19):
-- added Harmonogram.mpp to the folder
++ added Harmonogram.mpp to the folder
 
 what's new (14.10.19):
-- added new folder (project management folder)
-- filled it with sweets (pdfs)
++ say welcome to project management folder
++ filled it with sweets (pdfs)
 
