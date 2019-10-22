@@ -49,14 +49,14 @@ patternMatch2 (list2, 1)
 
 (*zadanie 5*)
 
-let rec initSegment(seg, xs) =
-	match (seg, xs) with
+let rec initSegment(xs, ys) =
+	match (xs, ys) with
 	| ([], _) -> true
 	| (_, []) -> false
-	| _ -> if List.hd seg == List.hd xs then initSegment(List.tl seg, List.tl xs)
+	| _ -> if List.hd xs == List.hd ys then initSegment(List.tl xs, List.tl ys)
 	 			 else false;;
 
-let segment1 = [2;3;4;5]
+let segment1 = [1;2;3;4]
 let segment2 = [2;3;4;6]
 let segment3 = [4;5]
 let newlist = [1;2;3;4;5;6]
@@ -64,7 +64,9 @@ let newlist = [1;2;3;4;5;6]
 initSegment(segment1, newlist)
 initSegment(segment2, newlist)
 initSegment(segment3, newlist)
-					
+
+
+(*zadanie 6*)
 
 
 

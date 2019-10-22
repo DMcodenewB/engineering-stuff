@@ -27,3 +27,26 @@ val b = fibTail(12)
 
 
 //zadanie 4
+
+
+//zadanie 5
+
+def initSegment [A](xs:List[A], ys:List[A]):Boolean =
+  (xs, ys) match{
+  case (Nil, _) => true
+  case (_, Nil) => false
+  case _ => if (xs.head==ys.head) initSegment(xs.tail, ys.tail)
+            else false
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
