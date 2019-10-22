@@ -4,10 +4,13 @@ the engineering project update has actually never seen the sunlight. time to tak
 
 
 
+what's new (22.10.19):
++ added cw2pp in paradigms (w.i.p.)
+* small updates to harmonogram
+
 what's new (21.10.19):
 + added new folder (paradigms) for easy access to excersise list solutions
 * ocaml.ml file in paradigms->cw1pp will be fixed later today
-
 
 what's new (16.10.19):
 + added Harmonogram.mpp to the folder
