@@ -3,6 +3,9 @@ guess who's back, back again
 the engineering project update has actually never seen the sunlight. time to take up something new
 
 
+what's new (23.10.19):
++added cw3pp in paradigms (w.i.p)
+*fixed some code in cw2pp
 
 what's new (22.10.19):
 + added cw2pp in paradigms (w.i.p.)
