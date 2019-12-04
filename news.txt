@@ -2,6 +2,12 @@ guess who's back, back again
 
 the engineering project update has actually never seen the sunlight. time to take up something new
 
+what's new (4.12.19):
+!I came back to writing the notes
++added lots of stuff
++newest update - paradigms->cw9pp
++biggest update - harmonogram2.0
+*fixed some TEP files, so only the code is left (we don't need megabytes of config files)
 
 what's new (23.10.19):
 +added cw3pp in paradigms (w.i.p)
