@@ -3,6 +3,7 @@ what's new (26.02.20):
 +added new folders to Current
 ~moved former Current to Archive
 -deleted some unnecessary files
+!archived Archive
 
 what's new (11.01.20):
 +moved on with the project management project
