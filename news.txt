@@ -1,6 +1,8 @@
-guess who's back, back again
-
-the engineering project update has actually never seen the sunlight. time to take up something new
+what's new (26.02.20):
+!New semester, new folders, new projects incoming
++added new folders to Current
+~moved former Current to Archive
+-deleted some unnecessary files
 
 what's new (11.01.20):
 +moved on with the project management project
