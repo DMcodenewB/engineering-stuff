@@ -2,7 +2,6 @@ what's new (25.03.20):
 +new programs and projects in 2nd
 +a new database file, I'll do something with it soon
 
-
 what's new (26.02.20):
 !New semester, new folders, new projects incoming
 +added new folders to Current
@@ -10,6 +9,7 @@ what's new (26.02.20):
 -deleted some unnecessary files
 !archived Archive
 
+////////
 what's new (11.01.20):
 +moved on with the project management project
 
