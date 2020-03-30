@@ -1,5 +1,4 @@
 what's new (25.03.20):
-a month without commits ooof, I'll try to be more systematic
 +new programs and projects in 2nd
 +a new database file, I'll do something with it soon
 
