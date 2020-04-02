@@ -1,0 +1,2 @@
+This program is a simple solution to the hourglass problem, based on a 2D array in Java. This is my approach to the problem.
+for more information, please visit https://www.hackerrank.com/challenges/2d-array/problem
