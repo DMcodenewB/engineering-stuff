@@ -1,3 +1,8 @@
+what's new (03.04.2020):
++added and modified some files in 2nd
++added "fun" folder, where I'll be posting some of more interesting (imo) solutions for Hackerrank excersises.
+(hope this doesn't get me copystriked or smth. well, I wrote that myself, so there shouldn't be a problem.)
+
 what's new (25.03.20):
 +new programs and projects in 2nd
 +a new database file, I'll do something with it soon
