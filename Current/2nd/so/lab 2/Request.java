@@ -1,11 +1,9 @@
 public class Request {
-
+                                                        //klasa Request, jej pola i metody
 
     private int location;
     private boolean isPrioritized;
     private int arrivalTime;
-
-
     private int deadline;
 
     public Request(int loc, int at){
