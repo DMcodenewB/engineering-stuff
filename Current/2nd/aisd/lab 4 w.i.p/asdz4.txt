@@ -1,0 +1,40 @@
+Zadanie z4 polega na opracowaniu narzêdzia s³u¿±cego do analizy statystycznej, dzia³aj±cego w oparciu o test chi-kwadrat. Ma ono pozwalaæ na wyliczenie warto¶ci statystyki chi-kwadrat oraz warto¶ci prawdopodobieñstwa dla danych z dwóch lub wiêcej grup, zliczonych w ramach dwóch lub wiêcej kategorii. Celem g³ównym jest opanowanie umiejêtno¶ci tworzenia i poruszania siê po tablicach dwuwymiarowych.
+
+Test chi-kwadrat jest testem nieparametrycznym, pozwalaj±cym testowaæ hipotezy dotycz±ce, miêdzy innymi, jednorodno¶ci (homogeniczno¶ci) grup danych pozyskanych z wykorzystaniem skal nominalnych (np. tak-nie, kobieta-mê¿czyzna, nazwy zawodów czy miast) lub porz±dkowych (np. wykszta³cenie: podstawowe-¶rednie-wy¿sze, stan zdrowia: krytyczny-z³y-przeciêtny-bardzo dobry). Dane tego rodzaju maj± charakter zliczeñ wyst±pieñ przypadków daj±cych siê przyporz±dkowaæ do jednej konkretnej kategorii ze zbioru wzajemnie roz³±cznych kategorii prezentowanych przez dan± skalê (nie mo¿na odpowiedzieæ na dane pytanie jednocze¶nie twierdz±co i przecz±co, nie mo¿na byæ jednocze¶nie w z³ym i dobrym stanie zdrowia).
+
+Dane wej¶ciowe nale¿y pobraæ z pliku .csv, a nastêpnie skonstruowaæ z nich tzw. tabelê liczebno¶ci obserwowanych (O). Przechowuje ona dane w postaci liczb ca³kowitych (int) i w najprostszej postaci (dwie grupy danych i dwie kategorie na skali pomiarowej) wygl±da np. tak:
+
+kategoria\grupa	grupa1	grupa2
+kategoria1      20      30
+kategoria2      50      10
+
+w kolejnym kroku nale¿y wyliczyæ sumy czê¶ciowe po wierszach i kolumnach oraz obliczyæ sumê ca³kowit± dla ca³ej tabeli:
+
+kategoria\grupa	grupa1	grupa2  SUMA
+kategoria1      20      30      50
+kategoria2      50      10      60
+SUMA            70      40      110
+
+Po obliczeniu sum czê¶ciowych nale¿y wygenerowaæ tzw. tabelê liczebno¶ci oczekiwanych (E), odzwierciedlaj±c± oczekiwany rozk³ad zliczeñ z uwzglêdnieniem wszystkich dostêpnych grup i kategorii. Warto¶ci w jej poszczególnych komórkach wylicza siê z uwzglêdnieniem obliczonych wcze¶niej warto¶ci sum czê¶ciowych dla danego wiersza i kolumny oraz warto¶ci sumy ca³kowitej tak,  by oddaæ oczekiwane proporcje w liczebno¶ciach, wynikaj±ce wprost z danych zsumowanych. Dla przyk³adu powy¿ej tabela E wygl±da³aby tak:
+
+kategoria\grupa	grupa1	grupa2
+kategoria1      31,82   18,18
+kategoria2      38,18   21,82
+
+Proszê zwróciæ uwagê, ¿e - uwzglêdniaj±c przyjêt± precyzjê obliczeñ zmiennoprzecinkowych - sumy czê¶ciowe i suma ca³kowita tabeli E s± takie same jak w przypadku tabeli O.
+
+Warto¶æ statystyki chi-kwadrat jest sum± znormalizowanych odchyleñ warto¶ci obserwowanych od warto¶ci oczekiwanych, obliczanych dla danej komórki w sposób nastêpuj±cy:
+
+((Oij - Eij)^2)/Eij
+
+Znaj±c warto¶æ statystyki chi-kwadrat oraz liczbê stopni swobody, wyliczan± wprost jako (liczba grup - 1)*(liczba kategorii - 1), nale¿y obliczyæ warto¶æ prawdopodobieñstwa p tego, ¿e dane z porównywanych grup s± do siebie podobne. Przyk³adowy sposób jej wyliczania (uwaga: w jêzyku JavaScript) znajduje siê w pliku z4_chisquare_js.txt.
+
+Obie tablice proszê zaimplementowaæ z wykorzystaniem dwuwymiarowej struktury array (nie klasy ArrayList), przy czym warto¶ci tablicy E proszê traktowaæ jako liczby rzeczywiste podwójnej precyzji (double).
+
+Dzia³aj±cy program powinien w sposób czytelny wy¶wietlaæ tabelê O wraz z obliczonymi sumami czê¶ciowymi, obliczon± tabelê E, obliczon± warto¶æ statystyki chi-kwadrat, liczbê stopni swobody oraz warto¶æ prawdopodobieñstwa p. Rozwi±zaniem s± wyniki wygenerowane dla zbioru wej¶ciowego z4data4.csv i zapisane w formacie .txt plus pliki ¼ród³owe .java stworzonego programu. Plik tekstowy z wynikami proszê dodatkowo uzupe³niæ (odrêcznie, nie ma potrzeby tworzenia do tego dodatkowego kodu) krótkim wnioskiem, jaki p³ynie z uzyskanych wyników, w kontek¶cie nastêpuj±cego pytania: czy proporcje liczby zgonów na wyró¿nione choroby ró¿ni± siê istotnie miêdzy poszczególnymi krajami uzwglêdnionymi w zestawieniu danych?
+
+Proszê *nie przesy³aæ* mi pe³nych katalogów z plikami wygenerowanymi przez IDE, a jedynie same pliki ¼ród³owe. Wyniki wygenerowane przez program i ich omówienie proszê zapisaæ *w jednym pliku tekstowym* z rozszerzeniem .txt. Nastêpnie wszystkie wymagane pliki proszê spakowaæ do archiwum zip|7z|rar, nadaæ mu nazwê zawieraj±c± nazwisko, imiê oraz numer zadania, i przes³aæ mailem jako za³±cznik, pamiêtaj±c o prefiksie grupy w temacie wiadomo¶ci. Rozwi±zañ przesy³anych w innej formie, w szczególno¶ci w postaci pojedynczych plików do³±czanych jako seria za³±czników czy archiwów z zagnie¿d¿onymi katalogami, w których muszê poszukiwaæ interesuj±cych mnie plików, nie bêdê sprawdza³.
+
+Poprawno¶æ obliczeñ swojego programu proszê kontrolowaæ z wykorzystaniem danych testowych z plików z4data1, z4data2 i z4data3 oraz kalkulatora dostêpnego pod adresem:
+
+https://www.socscistatistics.com/tests/chisquare2/default2.aspx
