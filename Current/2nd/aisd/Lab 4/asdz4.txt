@@ -33,8 +33,6 @@ Obie tablice proszê zaimplementowaæ z wykorzystaniem dwuwymiarowej struktury arr
 
 Dzia³aj±cy program powinien w sposób czytelny wy¶wietlaæ tabelê O wraz z obliczonymi sumami czê¶ciowymi, obliczon± tabelê E, obliczon± warto¶æ statystyki chi-kwadrat, liczbê stopni swobody oraz warto¶æ prawdopodobieñstwa p. Rozwi±zaniem s± wyniki wygenerowane dla zbioru wej¶ciowego z4data4.csv i zapisane w formacie .txt plus pliki ¼ród³owe .java stworzonego programu. Plik tekstowy z wynikami proszê dodatkowo uzupe³niæ (odrêcznie, nie ma potrzeby tworzenia do tego dodatkowego kodu) krótkim wnioskiem, jaki p³ynie z uzyskanych wyników, w kontek¶cie nastêpuj±cego pytania: czy proporcje liczby zgonów na wyró¿nione choroby ró¿ni± siê istotnie miêdzy poszczególnymi krajami uzwglêdnionymi w zestawieniu danych?
 
-Proszê *nie przesy³aæ* mi pe³nych katalogów z plikami wygenerowanymi przez IDE, a jedynie same pliki ¼ród³owe. Wyniki wygenerowane przez program i ich omówienie proszê zapisaæ *w jednym pliku tekstowym* z rozszerzeniem .txt. Nastêpnie wszystkie wymagane pliki proszê spakowaæ do archiwum zip|7z|rar, nadaæ mu nazwê zawieraj±c± nazwisko, imiê oraz numer zadania, i przes³aæ mailem jako za³±cznik, pamiêtaj±c o prefiksie grupy w temacie wiadomo¶ci. Rozwi±zañ przesy³anych w innej formie, w szczególno¶ci w postaci pojedynczych plików do³±czanych jako seria za³±czników czy archiwów z zagnie¿d¿onymi katalogami, w których muszê poszukiwaæ interesuj±cych mnie plików, nie bêdê sprawdza³.
-
 Poprawno¶æ obliczeñ swojego programu proszê kontrolowaæ z wykorzystaniem danych testowych z plików z4data1, z4data2 i z4data3 oraz kalkulatora dostêpnego pod adresem:
 
 https://www.socscistatistics.com/tests/chisquare2/default2.aspx
