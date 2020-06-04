@@ -1,0 +1,65 @@
+-------------------------------------------------
+
+Dane wejsciowe dla pliku z5data1.csv
+
+
+Miasto:  a	Tablica odleglosci: [    0   12   15   17   23   47]
+Miasto:  b	Tablica odleglosci: [   12    0    3    5   11   35]
+Miasto:  c	Tablica odleglosci: [   15    3    0    2    8   32]
+Miasto:  d	Tablica odleglosci: [   17    5    2    0    6   30]
+Miasto:  e	Tablica odleglosci: [   23   11    8    6    0   24]
+Miasto:  f	Tablica odleglosci: [   47   35   32   30   24    0]
+
+Znaleziona sciezka dla punktu startu d: d->c->b->e->a->f->d                               
+Rownanie sciezki: [ 2 + 3 + 11 + 23 + 47 + 30 ]
+Calkowita droga:   116
+
+-------------------------------------------------
+
+Dane wejsciowe dla pliku z5data2.csv
+
+
+Miasto:  a	Tablica odleglosci: [    0  673  251  368  944  631  218  800  736  938  581  531  530  828  527]
+Miasto:  b	Tablica odleglosci: [  673    0  789  379  823  100  463  722  734  977  784  783  927  535  202]
+Miasto:  c	Tablica odleglosci: [  251  789    0  574  806  720  409  668  588  748  388  331  283  771  603]
+Miasto:  d	Tablica odleglosci: [  368  379  574    0  981  387  164  846  817 1059  756  727  805  760  339]
+Miasto:  e	Tablica odleglosci: [  944  823  806  981    0  727  898  144  217  233  435  493  654  303  680]
+Miasto:  f	Tablica odleglosci: [  631  100  720  387  727    0  434  623  634  878  688  690  840  445  118]
+Miasto:  g	Tablica odleglosci: [  218  463  409  164  898  434    0  756  713  946  619  585  647  718  346]
+Miasto:  h	Tablica odleglosci: [  800  722  668  846  144  623  756    0   89  260  314  368  541  254  561]
+Miasto:  i	Tablica odleglosci: [  736  734  588  817  217  634  713   89    0  248  225  280  452  318  558]
+Miasto:  j	Tablica odleglosci: [  938  977  748 1059  233  878  946  260  248    0  362  417  529  505  806]
+Miasto:  k	Tablica odleglosci: [  581  784  388  756  435  688  619  314  225  362    0   58  229  503  584]
+Miasto:  l	Tablica odleglosci: [  531  783  331  727  493  690  585  368  280  417   58    0  184  543  582]
+Miasto:  m	Tablica odleglosci: [  530  927  283  805  654  840  647  541  452  529  229  184    0  727  725]
+Miasto:  n	Tablica odleglosci: [  828  535  771  760  303  445  718  254  318  505  503  543  727    0  427]
+Miasto:  o	Tablica odleglosci: [  527  202  603  339  680  118  346  561  558  806  584  582  725  427    0]
+
+Znaleziona sciezka dla punktu startu c: c->a->g->d->o->f->b->n->h->i->e->j->k->l->m->c    
+Rownanie sciezki: [ 251 + 218 + 164 + 339 + 118 + 100 + 535 + 254 + 89 + 217 + 233 + 362 + 58 + 184 + 283 ]
+Calkowita droga:  3405
+
+Znaleziona sciezka dla punktu startu f: f->b->o->d->g->a->c->m->l->k->i->h->e->j->n->f    
+Rownanie sciezki: [ 100 + 202 + 339 + 164 + 218 + 251 + 283 + 184 + 58 + 225 + 89 + 144 + 233 + 505 + 445 ]
+Calkowita droga:  3440
+
+Znaleziona sciezka dla punktu startu j: j->e->h->i->k->l->m->c->a->g->d->o->f->b->n->j    
+Rownanie sciezki: [ 233 + 144 + 89 + 225 + 58 + 184 + 283 + 251 + 218 + 164 + 339 + 118 + 100 + 535 + 505 ]
+Calkowita droga:  3446
+
+Znaleziona sciezka dla punktu startu o: o->f->b->d->g->a->c->m->l->k->i->h->e->j->n->o    
+Rownanie sciezki: [ 118 + 100 + 379 + 164 + 218 + 251 + 283 + 184 + 58 + 225 + 89 + 144 + 233 + 505 + 427 ]
+Calkowita droga:  3378
+
+-------------------------------------------------
+
+Koniec programu
+
+
+
+Wnioski:
+1) Z analizy otrzymanych wyników można wywnioskować, że długości tras wytyczonych na podstawie algorytmu zachłannego nie różnią się zbytnio dla zadanych punktów startowych. Algorytm za każdym razem znajduje najbliższe, nieodwiedzone jeszcze miasto, do którego należy się udać.
+2) Algorytm zachłanny rzadko wytyczy rzeczywistą najkrótszą trasę, a jego skuteczność maleje wraz ze wzrostem miast do odwiedzenia. Dzieje się tak, ponieważ program "widzi" jedynie odległości od węzła, w którym aktualnie się znajduje, zatem podejmuje decycje najlepsze lokalnie, a nie globalnie.
+
+
+

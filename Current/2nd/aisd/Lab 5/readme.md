@@ -1,0 +1,1 @@
+Program, which tries to tackle a Traveling Salesman Problem, using greedy strategy. Comments in Polish, code in English
