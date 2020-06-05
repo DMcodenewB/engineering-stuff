@@ -1,0 +1,46 @@
+Format wyswietlania wynikow:
+<nazwaPliku>, <liczbaElem>:  <Algorytm>	     <porownania>    <zamiany>
+--------------------------------------------------------------------
+
+z2data11.csv, 200 elementow: CocktailSort          15295       10293
+                             CombSort               3363         627
+z2data12.csv, 400 elementow: CocktailSort          61182       39626
+                             CombSort               7106        1401
+z2data13.csv, 800 elementow: CocktailSort         240000      157270
+                             CombSort              16576        3413
+z2data21.csv, 200 elementow: CocktailSort          20000       19900
+                             CombSort               2766         264
+z2data22.csv, 400 elementow: CocktailSort          80000       79800
+                             CombSort               6707         572
+z2data23.csv, 800 elementow: CocktailSort         320000      319600
+                             CombSort              14978        1242
+z2data31.csv, 200 elementow: CocktailSort            199           0
+                             CombSort               2567           0
+z2data32.csv, 400 elementow: CocktailSort            399           0
+                             CombSort               6308           0
+z2data33.csv, 800 elementow: CocktailSort            799           0
+                             CombSort              14179           0
+
+--------------------------------------------------------------------
+
+Wnioski:
+
+1. Ze zgromadzonych danych wynika, iż złożoność obliczeniowa algorytmu CombSort jest generalnie mniejsza niż algorytmu CocktailSort. 
+Większa złożoność algorytmu CocktailSort jest najprawdopodobniej spowodowana przez problem "żółwi", który algorytm CombSort rozwiązuje sprawniej.
+
+2. Algorytm CocktailSort dla listy posortowanej rosnąco posiada złożoność O(n) dla porównywania elementów; nie ma tu zaskoczenia, gdyż dla już posortowanej listy nie trzeba przechodzić po niej więcej niż raz.
+Dla listy posortowanej malejąco jest to złożoność O(n^2), a dokładniej (n^2)/2. 
+
+Algorytm CombSort dla listy posortowanej zarówno malejąco jak i rosnąco posiada złożoność obliczeniową dla porównywania około 20n - 1000. Złożoność dla listy posortowanej rosnąco byłaby znacznie mniejsza, gdyby algorytm sprawdzał wstępnie, czy lista jest już posortowana.
+
+Listy posortowane losowo dają najbardziej "życiowe" wyniki złożoności algorytmów: CocktailSort wskazuje na około 0.4n^2, a CombSort ma trochę większą złożoność niż dla którejś z list posortowanych. Dzieje się tak, ponieważ lista posortowana malejąco nie jest najbardziej "pesymistycznym" przypadkiem dla tego algorytmu.
+
+3. Algorytm CocktailSort ma dużą złożoność obliczeniową, więc przy dużych zbiorach danych (zwłaszcza posortowanych malejąco gdy chcemy sortować rosnąco) po prostu będzie zbyt powolny i niewydajny. Rozwiązaniem byłoby albo używać wydajniejszego algorytmu, albo jeśli koniecznie chcemy użyć CocktailSorta, to np. sprawdzić stopień posortowania listy - jeśli okaże się, że korzystniej byłoby sortować listę odwróconą, to należy ją odwrócić. Oczywiście operacja ta zużywa dodatkowo trochę zasobów, ale dla dużych kolekcji powinno się to opłacić.
+
+Algorytm CombSort - jak wspomniałem wyżej - powinien wstępnie sprawdzać czy lista jest już posortowana. Jeśli stopień posortowania listy będzie przekraczał ustaloną wartość (np. 95%), to można spróbować skorzystać z bardziej oszczędnego algorytmu.
+
+--------------------------------------------------------------------
+
+Załączyłem również arkusz Excela, który zawiera wykres złożoności obliczeniowej obu algorytmów dla list losowych.
+
+

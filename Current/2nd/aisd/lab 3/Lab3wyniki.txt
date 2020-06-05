@@ -1,0 +1,46 @@
+Looking for word "mars" using linear search...
+Word "mars" was found as a 167 word in file.
+Comparisons:   167
+
+Looking for word "mars" using binary search...
+Word "mars" was found as a 167 word in file.
+Comparisons:    15
+
+========================================
+
+Looking for word "ogilvy" using linear search...
+Word "ogilvy" was found as a 1170 word in file.
+Comparisons:  1170
+
+Looking for word "ogilvy" using binary search...
+Word "ogilvy" was found as a 1170 word in file.
+Comparisons:     5
+
+========================================
+
+Looking for word "sky" using linear search...
+Word "sky" was found as a 2212 word in file.
+Comparisons:  2212
+
+Looking for word "sky" using binary search...
+Word "sky" was found as a 2212 word in file.
+Comparisons:    10
+
+========================================
+
+Looking for word "meteor" using linear search...
+Word "meteor" was not found in file.
+
+Looking for word "meteor" using binary search...
+Word meteor was not found in file.
+
+========================================
+
+
+Z otrzymanych wyników można wywnioskować:
+
+1) Oba algorytmy działają jak trzeba. Przetestowałem je również dla innych danych i dają prawidłowe wyniki.
+
+2) Wydajność algorytmu wyszukiwania binarnego jest w większości przypadków znacznie lepsza niż dla wyszukiwania sekwencyjnego.
+Jednakże w niektórych przypadkach (gdy poszukiwane słowo znajduje się na początku sprawdzanego tekstu lub słowa bardzo często się powtarzają)
+bardziej opłacalny będzie pierwszy algorytm. Opisałem to dokładniej w kodzie (HashTest.java, 84-88).
