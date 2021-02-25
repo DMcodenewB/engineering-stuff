@@ -24,8 +24,6 @@ public class UtilityClass {         //klasa, która zajmuje się działaniem ca�
         for(String nodeName : startingNodeNames){
             calculateOptimalPath(nodeList, nodeName);       //wyszukiwanie cyklu Hamiltona dla każdego z zadanych miast sposobem zachłannym
         }
-
-
     }
 
     private void calculateOptimalPath(ArrayList<Node> nodeList, String startingNodeName) {      //metoda obliczająca wartość najkrótszej drogi zaczynając od podanego miasta
